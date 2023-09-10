@@ -1,0 +1,14 @@
+{
+    "name": "ShevamV@Terminal",
+    "short_name": "Terminal",
+    "description": "ShevamV@Terminal, A web html based custom terminal under developement...",
+    "start_url": "./index.html",
+    "theme_color": "#3399ff",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
