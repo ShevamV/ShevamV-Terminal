@@ -1,0 +1,51 @@
+/* Add your CSS styles here for the terminal interface */
+/* Example: */
+body {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.txtbx {
+  background: 0;
+  border: 0;
+  margin: 0;
+  color: white;
+  font-family: monospace;
+  width: 60%;
+}
+.terminal {
+  border: 1px solid white;
+  padding: 10px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.text-div {
+  background: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+}
+#command:focus {
+    outline: none;
+    border: none; /* Optionally remove the border as well */
+}
+/* Style for the div containing JSON input */
+#jsonInputDiv {
+    display: none; /* Initially hide the div */
+    margin-top: 20px;
+}
+.jsonbutton{
+  border: 1px solid white;
+  border-radius: 25px;
+  background: 0;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+/* Customize as needed */
