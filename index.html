@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShevamV@Terminal</title>
+</head>
+<body>
+  <button onclick="toggleJsonInput()" class="jsonbutton">Add JSON Data</button>
+
+<!-- Div for entering JSON data -->
+<div id="jsonInputDiv">
+    <textarea id="jsonData" placeholder="Enter JSON data"></textarea>
+    <button onclick="storeJsonData()">Save JSON</button>
+</div>
+
+    <div class="terminal">
+        <h2>Terminal</h2>
+        <div id="output"></div>
+  </div>
+  <div class="text-div">
+    <label for="command">ShevamV@Terminal $ </label>
+        <input type="text" id="command" onkeydown="checkEnter(event)" class="txtbx">
+  </div>
+  </body>
+</html>
