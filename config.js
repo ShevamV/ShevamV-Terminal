@@ -9,19 +9,9 @@ function storeJsonData() {
     const jsonData = document.getElementById('jsonData').value;
 
     try {
-        // Parse the JSON data to validate it
-        JSON.parse(jsonData);
-
-        // Update or append to your config object here
-        // For example, you can add it to an existing "config" object:
         const config = {
-            // ... (existing config data)
+           document.getElementById('jsonData').value;
         };
-        const newData = JSON.parse(jsonData);
-        Object.assign(config, newData);
-
-        // Convert back to JSON and update Config.js
-        const updatedConfig = JSON.stringify(config, null, 4); // Format with 4 spaces
         // Assuming you have a file writer function or use an appropriate method to save to Config.js
         // Example:
         // saveConfigToFile(updatedConfig);
