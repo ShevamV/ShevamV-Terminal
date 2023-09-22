@@ -12,14 +12,15 @@ body{
   background: black;
 }
 textarea {
-  margin: 0;
   color: green;
+  margin: 10px;
   font-family: monospace;
   font-size: 15px;
   background: black;
   padding: 8px;
-  width: 100%;
-  height:100%;
+  width: 90%;
+  height: auto;
+  min-height: 300px;
   border: 0;
   outline: 0;
 }
@@ -27,10 +28,14 @@ textarea {
     outline: none;
     border: none;
   }
- a, p{
+ a {
+   margin-left: 10px;
     color: green;
     font-size: 25px;
     font-family: monospace;
+  }
+  ::placeholder{
+    color:green;
   }
 </style>
 </head>
