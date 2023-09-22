@@ -10,52 +10,26 @@ body{
   font-family: monospace;
   font-size: 15px;
   background: black;
-  padding: 5px;
 }
+textarea {
+  margin: 0;
+  color: green;
+  font-family: monospace;
+  font-size: 15px;
+  background: black;
+  padding: 8px;
+  width: 100%;
+  overflow: auto;
+}
+  p{
+    color: green;
+    font-size: 25px;
+    font-family: monospace;
+  }
 </style>
 </head>
 <body>
-<label for="customInput">Entered Text: </label>
-<span id="enteredTextLabel"></span>
-
-
-<script>
-// Define the list of allowed keys
-const keysAllowed = [
-  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-  'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-  'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-  'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
-  '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-  'Enter', ' ', '.', ',', 'Backspace'
-];
-
-// Get a reference to the label element and the entered text span
-const enteredTextLabel = document.getElementById('enteredTextLabel');
-
-// Initialize a variable to store the entered text
-let enteredText = '';
-
-// Add an event listener for key press
-document.addEventListener('keydown', function(event) {
-  // Get the pressed key
-  const keyPressed = event.key;
-
-  // Check if the pressed key is in the list of allowed keys
-  if (keysAllowed.includes(keyPressed)) {
-    // Append the key to the entered text
-    if (keyPressed === 'Enter') {
-      enteredText += '\n';
-    } else {
-    enteredText += keyPressed;
-  }
-
-    // Update the text content of the entered text span
-    enteredTextLabel.textContent = enteredText;
-  }
-});
-
-//# sourceURL=userscript.js
-</script>
+ <p> ShevamV@Terminal $ </p>
+<textarea placeholder="Type Command...">
 </body>
 </html>
